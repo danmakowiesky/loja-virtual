@@ -321,3 +321,12 @@ a {
   text-align: center;
   margin-bottom: 20px;
 }
+
+.main_content_header_title {
+  font-size: 2em;
+  font-weight: bold;
+  color: #888;
+  display: inline-block;
+  border-top: 10px solid #888;
+  padding-top: 5px;
+}
