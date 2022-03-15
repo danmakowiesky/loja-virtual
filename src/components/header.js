@@ -44,7 +44,7 @@ export default function Header() {
               <a href='' className='radius transition bi-person '>
                 Minha Conta
               </a>
-              {/* <nav className='radius'>
+              <nav className='radius transition'>
                 <a href='#' title='Meus Pedidos'>
                   Meus Pedidos
                 </a>
@@ -57,11 +57,11 @@ export default function Header() {
                 <a href='#' title='Sair'>
                   Sair
                 </a>
-              </nav> */}
+              </nav>
             </div>
           </div>
         </div>
-        {/* <ul className='main_header_departaments'>
+        <ul className='main_header_departaments'>
           {departamentoLi.map((l, i) => (
             <li className='main_header_departments_li'>
               {l}
@@ -76,7 +76,7 @@ export default function Header() {
               </ul>
             </li>
           ))}
-        </ul> */}
+        </ul>
       </div>
     </header>
   );
