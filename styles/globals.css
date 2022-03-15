@@ -114,6 +114,7 @@ a {
   padding: 50px 10px;
 }
 
+/*Heaeder*/
 .main_header {
   background-color: black;
   color: #fff;
@@ -128,4 +129,46 @@ a {
   align-items: center;
   color: #fff;
   padding: 0 10px;
+}
+
+/*Logo*/
+.main_header_nav_logo {
+  flex-basis: 30%;
+}
+
+.main_header_nav_logo img {
+  width: 200px;
+  max-width: 100%;
+}
+
+/*Search*/
+.main_header_nav_search {
+  flex-basis: 40%;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.main_header_nav_search form {
+  background: #fff;
+  display: flex;
+  overflow: hidden;
+}
+
+.main_header_nav_search input {
+  width: 100%;
+  font-size: 0.875em;
+  padding: 10px;
+  border: none;
+  outline: 1px solid #000;
+}
+
+.main_header_nav_search button {
+  border: none;
+  padding: 0 20px;
+  color: #fff;
+  background: var(--pink);
+}
+
+.main_header_nav_search button:hover {
+  background: var(--pink_h);
 }
