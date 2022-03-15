@@ -63,14 +63,16 @@ export default function Header() {
         </div>
         <ul className='main_header_departaments'>
           {departamentoLi.map((l, i) => (
-            <li className='main_header_departments_li'>
+            <li className='main_header_departaments_li'>
               {l}
               {i + 1}
-              <ul>
+              <ul className='main_header_departaments_li_ul'>
                 {departamentoLi_2.map((ll, index) => (
-                  <li className='main_header_departments-li_ul_li'>
-                    {ll}
-                    {i + 1}/{index + 1}
+                  <li className='main_header_departaments_li_ul_li'>
+                    <a href='#'>
+                      {ll}
+                      {i + 1}/{index + 1}
+                    </a>
                   </li>
                 ))}
               </ul>

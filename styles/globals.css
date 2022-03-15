@@ -122,7 +122,7 @@ a {
 }
 
 .main_header .container {
-  padding: 25px 0 0 0;
+  padding: 25px 40px 0 40px;
 }
 
 .main_header_nav {
@@ -251,4 +251,73 @@ a {
 .main_header_nav_menu_user:hover nav {
   display: block;
   transition-duration: var(--seconds);
+}
+
+/*departaments*/
+.main_header_departaments {
+  display: block;
+  width: 100%;
+  margin-top: 25px;
+  padding-bottom: 5px;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main_header_departaments_li {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 0.875em;
+  font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px 4px 0 0;
+}
+
+.main_header_departaments_li:hover {
+  background: #fff;
+  color: #333;
+}
+
+.main_header_departaments_li_ul {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  top: 100%;
+  padding: 0 20px 20px 20px;
+  width: 100%;
+  color: #333;
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+  cursor: pointer;
+  display: none;
+}
+
+.main_header_departaments_li:hover .main_header_departaments_li_ul {
+  display: block;
+}
+
+.main_header_departaments_li_ul_li,
+.main_header_departaments_li_ul_li a {
+  text-transform: none;
+  display: block;
+  width: 100%;
+  font-weight: normal;
+  color: #333;
+  margin-top: 5px;
+}
+
+.main_header_departaments_li_ul_li a:hover {
+  text-decoration: underline;
+}
+
+/*main*/
+.main_content {
+  display: block;
+  width: 100%;
+}
+
+.main_content_header {
+  text-align: center;
+  margin-bottom: 20px;
 }
