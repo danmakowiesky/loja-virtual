@@ -34,14 +34,17 @@ export default function Header() {
           </div>
 
           <div className='main_header_nav_menu'>
-            <a href='' className='transition bi-cart2 '>
+            <a
+              href=''
+              className='transition bi-cart2 main_header_nav_menu_cart'
+            >
               <span>3</span>
             </a>
-            <div className='main_nav_menu_user'>
+            <div className='main_header_nav_menu_user transition '>
               <a href='' className='radius transition bi-person '>
                 Minha Conta
               </a>
-              <nav className='radius'>
+              {/* <nav className='radius'>
                 <a href='#' title='Meus Pedidos'>
                   Meus Pedidos
                 </a>
@@ -54,11 +57,11 @@ export default function Header() {
                 <a href='#' title='Sair'>
                   Sair
                 </a>
-              </nav>
+              </nav> */}
             </div>
           </div>
         </div>
-        <ul className='main_header_departaments'>
+        {/* <ul className='main_header_departaments'>
           {departamentoLi.map((l, i) => (
             <li className='main_header_departments_li'>
               {l}
@@ -73,7 +76,7 @@ export default function Header() {
               </ul>
             </li>
           ))}
-        </ul>
+        </ul> */}
       </div>
     </header>
   );
