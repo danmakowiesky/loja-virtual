@@ -1,9 +1,80 @@
-html,
-body {
-  padding: 0;
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+:root {
+  --a: #dd336b;
+
+  --green: #46ceac;
+  --green_h: #35ba9b;
+  --green_l: #61ddbc;
+
+  --blue: #4fc0e8;
+  --blue_h: #3aadd9;
+  --blue_l: #66d4f1;
+
+  --yellow: #fdcd56;
+  --yellow_h: #f5b945;
+  --yellow_l: #fbd277;
+
+  --red: #eb5463;
+  --red_h: #d94452;
+  --red_l: #f76c82;
+
+  --pink: #dd336b;
+  --pink_h: #f4407c;
+}
+
+[data-icon]:before {
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^='icon-']:before,
+[class*=' icon-']:before {
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  position: relative;
+  top: 0.125em;
+  margin-right: 0.4em;
+}
+
+embed,
+video,
+iframe,
+iframe[style] {
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+img a {
+  border: none;
+}
+
+ul {
+  list-style: none;
 }
 
 a {
@@ -11,6 +82,43 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+.icon-notext::before {
+  top: 0;
+  margin: 0;
+  background-color: aqua;
+}
+
+.radius {
+  --radius: 4px;
+  border-radius: var(--radius);
+  -moz-border-radius: var(--radius);
+  -webkit-border-radius: var(--radius);
+}
+
+.rounded {
+  --radius: 50%;
+  border-radius: var(--radius);
+  -moz-border-radius: var(--radius);
+  -webkit-border-radius: var(--radius);
+}
+
+.transition {
+  --seconds: 0.2s;
+  transition-duration: var(--seconds);
+  -moz-transition-duration: var(--seconds);
+  -webkit-transition-duration: var(--seconds);
+  cursor: pointer;
+}
+
+.container {
+  padding: 50px 10px;
+}
+
+.main_header {
+  background-color: black;
+  color: #fff;
+}
+
+.main_header .container {
+  padding: 25px 0 0 0;
 }
