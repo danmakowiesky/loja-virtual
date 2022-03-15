@@ -122,3 +122,10 @@ a {
 .main_header .container {
   padding: 25px 0 0 0;
 }
+
+.main_header_nav {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 0 10px;
+}
