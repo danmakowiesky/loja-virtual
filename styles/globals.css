@@ -27,6 +27,8 @@
 
   --pink: #dd336b;
   --pink_h: #f4407c;
+
+  --font-face-default: 'verdana';
 }
 
 [data-icon]:before {
@@ -234,6 +236,7 @@ a {
   background: #fff;
   width: 200px;
   display: none;
+  font: var(--font-face-default);
 }
 
 .main_header_nav_menu_user nav a {

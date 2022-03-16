@@ -21,7 +21,7 @@ export default function Header() {
         <div className='main_header_nav'>
           <div className='main_header_nav_logo'>
             <a href='#' title='wpshoes | Home'>
-              <img src='/assets/wdpshoes_logo_white.png' alt='' srcset='' />
+              <img src='/assets/wdpshoes_logo_white.png' alt='Logo WDPShoes' />
             </a>
           </div>
           <div className='main_header_nav_search'>
